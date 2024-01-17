@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>map - html</title>
+        <title>detail - html</title>
         <style>
             body {
                 position: relative;
@@ -18,7 +18,7 @@
             }
 
             img {
-                width: 50%;
+                width: 100%;
                 height: auto;
                 position: relative;
                 z-index: 1;
@@ -99,13 +99,27 @@
             <li><a href="map.html">서비스 이용 가능 지역</a></li>
             <li><a href="#">DRT 예약하기</a></li>
         </ul>
-    </head>
 
-        <h2>나주 DRT 운행 지역<br></h2>
-        <h3><li>● 문평면</li></h3>
-        <img src="문평면.PNG" width="50%">
-        <h3><li>● 다도면</li></h3>
-        <img src="다도면.PNG" width="50%">
+        <h2>DRT란?</h2>
+        <p>수요가 거의 없지만 반드시 버스 등 대중교통이 운행되어야 하는 지역에 적합한, 벽지노선을 대체하는 새로운 운행체계이다.</p>
+
         
+        <h3>DRT를 이용함으로써 아래와 같은 고질적인 문제점을 해결할 수 있다.</h3>
+
+        <ol>
+            <li>1.지역 주민들의 이동성 및 접근성 향상</li><br>
+            <li>2.대중교통 서비스의 안정적인 공급</li><br>
+            <li>3.버스 업계의 경영난 해소</li><br>
+        </ol>
+        
+        
+        <img src="DRT사진.jpg" alt="DRT 이미지">
+
+        <script>
+            function toggleMenu() {
+                const dropdown = document.querySelector('.dropdown');
+                dropdown.style.display = (dropdown.style.display === 'block') ? 'none' : 'block';
+            }
+        </script>
     </body>
 </html>
